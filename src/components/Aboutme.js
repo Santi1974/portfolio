@@ -5,6 +5,7 @@ import { Fade } from "react-reveal";
 function Aboutme(){
     return(
         <section className="aboutme">
+            <div className="bg"></div>
             <Fade left>
                 <div className="avatar">
                     <img src={avatar} alt="avatar"></img>

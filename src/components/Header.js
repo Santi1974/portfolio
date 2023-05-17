@@ -4,7 +4,7 @@ import { Fade } from "react-reveal";
 
 function Header(){
     return(
-        <Fade duration={3000}>
+        <Fade duration={2800} delay={3500}>
             <header>
                 <h1 className="title">Santiago Beneitez</h1>
                 <div className="description">

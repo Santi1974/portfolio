@@ -7,8 +7,6 @@ import jslogoblack from "../assets/jslogoblack.png"
 import reactlogoblack from "../assets/reactlogoblack.png"
 
 
-
-
 function Skills(){
     return(
         <section className="skills">
@@ -21,7 +19,7 @@ function Skills(){
                             <li>Facil aprendizaje</li>
                             <li>Autodidacta</li>
                             <li>Buena predisposición</li>
-                            <li>Perseverancia</li>
+                            <li>Adaptabilidad</li>
                             <li>Trabajo en grupo</li>
                         </ul>
                     </div>
