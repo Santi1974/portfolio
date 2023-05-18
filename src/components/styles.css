@@ -109,6 +109,18 @@ header .description img{
 }
 */
 
+.aboutme .bg{
+    position: absolute;
+    width: 100%;
+    top: 110vh;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(../assets/bg);
+    filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /*Avatar animation*/
     .aboutme .avatar img{
         --s: 60%; /* image size */
@@ -303,6 +315,19 @@ header .description img{
         background-attachment: fixed;
 }
 */
+
+.project .bg2{
+        position: absolute;
+        width: 100%;
+        top: 311vh;
+        height: 98vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(../assets/bg2.jpg);
+        filter: blur(5px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
 /*CONTACT STYLES*/
 .contact {
     height: 8vh;
