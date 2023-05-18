@@ -12,7 +12,7 @@ const Preload = () => {
   return (
     
     <div className='preloader'>
-        <img src={logo}></img>
+        <img src={logo} alt='santiago-beneitez-logo'></img>
         <span>Hello World</span>
     </div>
   )

@@ -9,6 +9,7 @@ import pdfcv from "../assets/cv.pdf"
 function Contact(){
     return(
         <footer className="contact">
+            <div className="contact-border"></div>
             <div className="contact-div">
                 <div>
                     <img src={linkedinlogo} alt="linkedin-logo"></img>

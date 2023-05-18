@@ -20,6 +20,7 @@
     justify-content: space-around;
     cursor: pointer;
     border-left: 3px solid #f5f5f5;
+    
 }
 .navbar .navright .bar{
     background: linear-gradient(to right, rgb(141,56,165), rgb(255,0,0));
@@ -41,6 +42,13 @@
 .navbar .navleft img{
     width: 40%;
 }
+.navbar .burguer{
+    width: 2.5%;
+    position: relative;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+}
 
 /*HEADER STYLES*/
 header{
@@ -58,6 +66,7 @@ header .description span{
     color: transparent;  
 }
 header .title{
+    text-align: center;
     font-size: 5rem;
     text-shadow: 0 0 8px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3);
 }
@@ -85,6 +94,20 @@ header .description img{
     justify-content: center;
     align-items: center;
 }
+/*
+.aboutme .bg{
+    position: absolute;
+    width: 100%;
+    top: 110vh;
+    height: 38.5vh;
+    background: url(../assets/bg);
+    filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+*/
+
 /*Avatar animation*/
     .aboutme .avatar img{
         --s: 60%; /* image size */
@@ -129,9 +152,6 @@ header .description img{
     margin: 0;
 }
 
-
-
-
 /*SKILLS STYLES*/
 .skills{
     height: 100vh;
@@ -151,6 +171,9 @@ header .description img{
     display: grid;
     grid-template-columns: 30% 70%;
 }
+.skills .cards h3{
+    text-align: center;
+}
 .skills .cards .informatic{
     padding-left: 20px;
     border-left: solid 2px #f5f5f5;
@@ -168,17 +191,17 @@ header .description img{
     margin: 10px auto;
     width: 80px;
     height: 80px;
-    background-color: #b1c2cc;
+    background-color: #0f0f0f;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: all 300ms;
     overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px;
 }
 .tech .circle img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
     transition: all 300ms;
 }
 .tech .circle p{
@@ -191,15 +214,15 @@ header .description img{
 .tech .circle:hover{
     transform: scale(115%);
 }
-/*Circle animations
+
 .circle::before {
     content: "";
     position: absolute;
+    background: linear-gradient(to right, rgb(141,56,165), rgb(255,0,0));
     top: 0px;
     left: 0;
     width: 0%;
     height: 0%;
-    background-color: #b1c2cc;
     transform-origin: bottom;
     transform: scaleY(0);
     transition: transform 0.5s ease;
@@ -209,7 +232,7 @@ header .description img{
     width: 100%;
     height: 100%;
   }
-  */
+
 .tech .circle:hover img{
     opacity: 0;
 }
@@ -266,7 +289,19 @@ header .description img{
 .project-grid .project-item:hover{
     transform: translateY(-5px);
 }
-
+/*
+.project .bg2{
+        position: absolute;
+        width: 100%;
+        top: 290vh;
+        height: 38.5vh;
+        background: url(../assets/bg2.jpg);
+        filter: blur(5px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
+*/
 /*CONTACT STYLES*/
 .contact {
     height: 8vh;
@@ -275,30 +310,24 @@ header .description img{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    background-color: #b1c2cc;
+    background-color: #0f0f0f;
 }
 .contact .contact-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 15px 0px 20px 0px; 
 }
 .contact .contact-div div img{
     width: 6%;
-    transition: transform 300ms;
     z-index: 5;
 }
-.contact .contact-div div img:hover{
-    transform: scale(115%);
-}
 .contact .contact-div div p:hover{
-    transform: scale(105%);
+    color: #f5f5f5;
 }
 .contact .contact-div div p{
-    color: #000;
+    color: #868686;
     padding-left: 10px;
-    transition: transform 300ms;
+    transition: color 300ms;
 }
 .contact .contact-div div{
     display: flex;
@@ -306,11 +335,85 @@ header .description img{
     justify-content: center;
 }
 .contact .contact-div div a{
-    color: #000;
+    color: #868686;
     padding-left: 10px;
     text-decoration: none;
-    transition: transform 300ms;
+    transition: color 300ms;
 }
 .contact .contact-div div a:hover{
-    transform: scale(105%);
+    color: #f5f5f5;
+}
+.contact .contact-border{
+    position: absolute;
+    background-color: white;
+    height: 8.2vh;
+    width: 100%;
+    z-index: -1;
+    background: linear-gradient(to right, rgb(141,56,165), rgb(255,0,0));
+}
+
+/*Responsive*/
+@media (max-width:900px){
+    .navbar .burguer{
+        width: 2.5%;
+        position: absolute;
+        top: 30px;
+        right: 7%;
+        cursor: pointer;
+        opacity: 1;
+        visibility: visible;
+       
+    }
+    .navright{
+        opacity: 0;
+        visibility: hidden;
+    }
+        .responsive{
+            height: 100vh;
+            transition: all 400ms;
+        }
+        .responsive .navright{
+            opacity: 1;
+            visibility: visible;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            border: none;
+            justify-content: space-evenly;
+            transition: all 400ms;
+        }
+        .responsive .navleft{
+            visibility: hidden;
+            opacity: 0;
+            
+        }
+    .aboutme{
+        width: 80%;
+    }
+    .skills{
+        width: 80%;
+    }
+    .skills .cards .informatic .tech{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .project{
+        width: 80%;
+    }
+    .project .project-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .contact{
+        margin-top: 50px;
+        height: 15vh;
+    }
+    .contact .contact-border{
+        height: 15.4vh;
+    }
+    .contact .contact-div{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }

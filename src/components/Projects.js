@@ -4,6 +4,7 @@ import { Fade } from "react-reveal";
 function Projects(){
     return(
         <section className="project">
+            <div className="bg2"></div>
             <Fade left>
                 <h2>Proyectos</h2>
                 <div className="project-grid">

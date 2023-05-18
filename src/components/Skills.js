@@ -1,10 +1,10 @@
 import React from "react";
 import { Fade } from "react-reveal";
 
-import htmllogoblack from "../assets/htmllogoblack.png"
-import csslogoblack from "../assets/csslogoblack.png"
-import jslogoblack from "../assets/jslogoblack.png"
-import reactlogoblack from "../assets/reactlogoblack.png"
+import htmllogo from "../assets/htmllogo.png"
+import csslogo from "../assets/csslogo.png"
+import jslogo from "../assets/jslogo.png"
+import reactlogo from "../assets/reactlogo.png"
 
 
 function Skills(){
@@ -28,20 +28,20 @@ function Skills(){
                         <h3>Informaticas</h3>
                         <div className="tech">
                         <div className="circle">
-                                <img src={htmllogoblack} alt="html-logo"></img>
+                                <img src={htmllogo} alt="html-logo"></img>
                                 <p>HTML</p>
                             </div>
                             <div className="circle">
-                                <img src={csslogoblack} alt="css-logo"></img>
+                                <img src={csslogo} alt="css-logo"></img>
                                 <p>CSS</p>
                             </div>
                             <div className="circle">
-                                <img src={jslogoblack} alt="js-logo"></img>
+                                <img src={jslogo} alt="js-logo"></img>
                                 <p id="js">JavaScript</p>
                             </div>
 
                             <div className="circle">
-                                <img src={reactlogoblack} alt="react-logo"></img>
+                                <img src={reactlogo} alt="react-logo"></img>
                                 <p>React</p>
                             </div>
                         </div>
