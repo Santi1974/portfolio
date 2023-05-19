@@ -443,3 +443,34 @@ header .description img{
         grid-template-rows: 1fr 1fr;
     }
 }
+
+@media (max-width:768px) {
+    header .title{
+        word-wrap:break-word;
+    }
+    .skills{
+        width: 85%;
+    }
+    .skills .cards .personal{
+        word-wrap: break-word;
+    }
+    .project .project-grid .project-item{
+        width: 250px;
+        height: 150px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:740px) {
+    .aboutme{
+        flex-direction: column;
+    }
+    .aboutme .avatar img{
+        --s: 80%; 
+    }
+    .aboutme .texto{
+        text-align: center;
+        padding-top: 50px;
+    }
+}
+

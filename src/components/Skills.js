@@ -11,12 +11,12 @@ function Skills(){
     return(
         <section className="skills">
             <Fade left>
-                <h2>Habilidades/Tecnologias</h2>
+                <h2>Habilidades/Tecnologías</h2>
                 <div className="cards">
                     <div className="personal">
                         <h3>Personales</h3>
                         <ul>
-                            <li>Facil aprendizaje</li>
+                            <li>Fácil aprendizaje</li>
                             <li>Autodidacta</li>
                             <li>Buena predisposición</li>
                             <li>Adaptabilidad</li>
@@ -25,7 +25,7 @@ function Skills(){
                     </div>
 
                     <div className="informatic">
-                        <h3>Informaticas</h3>
+                        <h3>Informáticas</h3>
                         <div className="tech">
                         <div className="circle">
                                 <img src={htmllogo} alt="html-logo"></img>

@@ -42,7 +42,7 @@ function Navbar(){
                         <div className="bar"></div>
                     </li>
                     <li>
-                        <Link to="contact" smooth={true} duration={500} className="navitem">Contactame</Link>
+                        <Link to="contact" smooth={true} duration={500} className="navitem">Contáctame</Link>
                         <div className="bar"></div>
                     </li>
                 </ul>
