@@ -95,26 +95,12 @@ header .description img{
     align-items: center;
     width: 40%;
 }
-/*
-.aboutme .bg{
-    position: absolute;
-    width: 100%;
-    top: 110vh;
-    height: 38.5vh;
-    background: url(../assets/bg);
-    filter: blur(5px);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-*/
-
 .aboutme .bg{
     position: absolute;
     width: 100%;
     top: 110vh;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(../assets/bg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),  url(../assets/bg);
     filter: blur(5px);
     background-repeat: no-repeat;
     background-size: cover;
@@ -129,7 +115,7 @@ header .description img{
     --f: 1; /* initial scale */
     
     width: var(--s);
-    aspect-ratio: 1;
+    aspect-ratio: 1.05;
     padding-top: 4%;
     cursor: pointer;
     border-radius: 0 0 999px 999px;
@@ -231,7 +217,7 @@ header .description img{
 .circle::before {
     content: "";
     position: absolute;
-    background: linear-gradient(to right, rgb(141,56,165), rgb(255,0,0));
+    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
     top: 0px;
     left: 0;
     width: 0%;
@@ -302,26 +288,12 @@ header .description img{
 .project-grid .project-item:hover{
     transform: translateY(-5px);
 }
-/*
-.project .bg2{
-        position: absolute;
-        width: 100%;
-        top: 290vh;
-        height: 38.5vh;
-        background: url(../assets/bg2.jpg);
-        filter: blur(5px);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-}
-*/
-
 .project .bg2{
         position: absolute;
         width: 100%;
         top: 311vh;
         height: 98vh;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url(../assets/bg2.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),  url(../assets/bg2.jpg);
         filter: blur(5px);
         background-repeat: no-repeat;
         background-size: cover;
@@ -337,6 +309,11 @@ header .description img{
     align-items: center;
     justify-content: center;
     background-color: #0f0f0f;
+}
+.contact .contact-div #copied{
+    font-size: 0.6rem;
+    position: absolute;
+    transform: translateY(-20px);
 }
 .contact .contact-div {
     display: grid;
@@ -354,6 +331,7 @@ header .description img{
     color: #868686;
     padding-left: 10px;
     transition: color 300ms;
+    cursor: pointer;
 }
 .contact .contact-div div{
     display: flex;
@@ -459,11 +437,18 @@ header .description img{
         height: 150px;
         font-size: 1rem;
     }
+    .navbar .navleft img{
+        width: 50%;
+    }
+    .navbar .burguer{
+        width: 4%;
+    }
 }
 
 @media (max-width:740px) {
     .aboutme{
         flex-direction: column;
+        width: 90%;
     }
     .aboutme .avatar img{
         --s: 80%; 
@@ -471,6 +456,120 @@ header .description img{
     .aboutme .texto{
         text-align: center;
         padding-top: 50px;
+        width: 90%;
     }
 }
 
+@media(max-width: 650px){
+    .skills{
+        width: 80%;
+    }
+    .skills .cards{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 0px;
+    }
+    .skills .cards .informatic{
+        border: none;
+    }
+    .skills .cards .personal{
+        margin: auto;
+    }
+    .project .project-grid .project-item{
+        width: 200px;
+        height: 120px;
+        font-size: 0.8rem;
+    }
+    .contact .contact-div{
+        font-size: .8rem;
+    }
+    .navbar .navleft img{
+        width: 40px;
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 530px){
+    header .title{
+        font-size: 4.8rem;
+    }
+    .project .project-grid .project-item{
+        width: 175px;
+        height: 100px;
+        font-size: 0.6rem;
+    }
+    .contact .contact-div{
+        font-size: .6rem;
+    }
+    .contact .contact-div div img{
+        width: 5%;
+    }
+}
+
+@media (max-width: 475px) {
+    .project .project-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .project .project-grid .project-item{
+        width: 200px;
+        height: 120px;
+        font-size: 0.8rem;
+    }
+    .project .project-grid .project-item:nth-child(5){
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+    }
+    .project .project-grid .project-item:nth-child(6){
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+    }
+    .navbar .burguer{
+        width: 6%;
+    }
+    .skills h2{
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 400px) {
+    header .title{
+        font-size: 4rem;
+    }
+    header .description{
+        font-size: 0.8rem;
+    }
+    .skills h2{
+        font-size: 1.6rem;
+    }
+    .contact .contact-div{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+    .contact .contact-div div img{
+        width: 4%;
+    }
+    .contact{
+        margin-top: 10px;
+        height: 17vh;
+    }
+    .contact .contact-border{
+        height: 17.4vh;
+    }
+    .aboutme .texto{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 375px) {
+    header .title{
+        font-size: 3.65rem;
+    }
+    header .description{
+        font-size: 0.65rem;
+    }
+    .skills h2{
+        font-size: 1.35rem;
+    }
+}

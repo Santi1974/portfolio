@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import linkedinlogo from "../assets/linkedinlogo.png"
 import phonelogo from "../assets/phonelogo.png"
 import maillogo from "../assets/maillogo.png"
@@ -7,6 +7,17 @@ import pdfcv from "../assets/cv.pdf"
 
 
 function Contact(){
+    const [copied,setCopied] = useState(false);
+
+    const handleCopy = (text) => {
+        navigator.clipboard.writeText(text);
+        setCopied(true);
+            setTimeout(() => {
+                setCopied(false);
+                }, 2000);
+      };
+
+
     return(
         <footer className="contact">
             <div className="contact-border"></div>
@@ -21,11 +32,18 @@ function Contact(){
                 </div>
                 <div>
                     <img src={maillogo} alt="mail-icon"></img>
-                    <p>santiagobeneitez1974@gmail.com</p>
+                    <p  onClick={() => handleCopy("santiagobeneitez1974@gmail.com")}>santiagobeneitez1974@gmail.com</p>
+                    {copied && <p id="copied">Copied</p>}
                 </div>
                 <div>
                     <img src={cvlogo} alt="paper-icon"></img>
-                    <a href={pdfcv}  target="_blank" rel="noopener noreferrer" download="cv_santiago_beneitez.pdf">Descargar mi Curriculum </a>
+                    <a href={pdfcv}  
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        download="cv_santiago_beneitez.pdf"
+                        >
+                            Descargar mi Curriculum 
+                        </a>
                 </div>
             </div>
         </footer>
