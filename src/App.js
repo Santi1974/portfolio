@@ -12,6 +12,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Preload from "./components/Preload";
 
+
 function App() {
   return (
     <div className="App">

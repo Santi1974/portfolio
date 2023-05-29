@@ -1,0 +1,38 @@
+{
+    "navigation":{
+        "home" : "Home",
+        "aboutme" : "About Me",
+        "skills" : "Skills",
+        "portfolio" : "Portfolio",
+        "contact" : "Contact"
+    },
+
+    "main-title":{
+        "description-1": "Jr. ",
+        "description-2": " Developer"    },
+
+    "aboutme":{
+        "title": "About Me",
+        "description" : "I'm a junior programmer with experience in web development, focusing on the visual aspects and user interface. Since 2017, I have been immersed in the programming world and I enjoy working on challenging projects where I can apply my knowledge. I'm continuously updating my skills and acquiring new knowledge."
+    },
+
+    "skills":{
+        "title": "Skills/Technologies",
+        "personal-title": "Soft skills",
+        "personal-1": "Easy learning",
+        "personal-2": "Self-taught",
+        "personal-3": "Good willingness",
+        "personal-4": "Adaptability",
+        "personal-5": "Team work",
+        "it-title": "Technical/IT Skills"
+    },
+
+    "projects":{
+        "title": "Projects"
+    },
+
+    "contact":{
+        "linkedin" : "Linkedin profile",
+        "cv" : "Download my resume"
+    }
+}

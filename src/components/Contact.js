@@ -4,9 +4,13 @@ import phonelogo from "../assets/phonelogo.png"
 import maillogo from "../assets/maillogo.png"
 import cvlogo from "../assets/cvlogo.png"
 import pdfcv from "../assets/cv.pdf"
+import { useTranslation } from "react-i18next";
 
 
 function Contact(){
+
+    const[t, i18n] = useTranslation("global");
+
     const [copied,setCopied] = useState(false);
 
     const handleCopy = (text) => {
@@ -24,7 +28,7 @@ function Contact(){
             <div className="contact-div">
                 <div>
                     <img src={linkedinlogo} alt="linkedin-logo"></img>
-                    <a href="https://www.linkedin.com/in/santiago-beneitez-143583217" target="_blank" rel="noopener noreferrer">Perfil en Linkedin </a>
+                    <a href="https://www.linkedin.com/in/santiago-beneitez-143583217" target="_blank" rel="noopener noreferrer">{t("contact.linkedin")}</a>
                 </div>
                 <div>
                     <img src={phonelogo} alt="phone-icon"></img>
@@ -42,7 +46,7 @@ function Contact(){
                         rel="noopener noreferrer" 
                         download="cv_santiago_beneitez.pdf"
                         >
-                            Descargar mi Curriculum 
+                            {t("contact.cv")}
                         </a>
                 </div>
             </div>

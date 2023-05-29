@@ -6,26 +6,33 @@ import csslogo from "../assets/csslogo.png"
 import jslogo from "../assets/jslogo.png"
 import reactlogo from "../assets/reactlogo.png"
 
+import { useTranslation } from "react-i18next";
+
 
 function Skills(){
+
+    const[t, i18n] = useTranslation("global");
+
     return(
         <section className="skills">
             <Fade left>
-                <h2>Habilidades/Tecnologías</h2>
+                {/*<div className="line"></div>
+                <div className="line2"></div>*/}
+                <h2>{t("skills.title")}</h2>
                 <div className="cards">
                     <div className="personal">
-                        <h3>Personales</h3>
+                        <h3>{t("skills.personal-title")}</h3>
                         <ul>
-                            <li>Fácil aprendizaje</li>
-                            <li>Autodidacta</li>
-                            <li>Buena predisposición</li>
-                            <li>Adaptabilidad</li>
-                            <li>Trabajo en grupo</li>
+                            <li>{t("skills.personal-1")}</li>
+                            <li>{t("skills.personal-2")}</li>
+                            <li>{t("skills.personal-3")}</li>
+                            <li>{t("skills.personal-4")}</li>
+                            <li>{t("skills.personal-5")}</li>
                         </ul>
                     </div>
 
                     <div className="informatic">
-                        <h3>Informáticas</h3>
+                        <h3>{t("skills.it-title")}</h3>
                         <div className="tech">
                         <div className="circle">
                                 <img src={htmllogo} alt="html-logo"></img>

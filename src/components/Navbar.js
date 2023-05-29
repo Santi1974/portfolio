@@ -5,12 +5,15 @@ import { Fade } from "react-reveal";
 import logo from "../assets/logowhite2.png"
 import burguer from "../assets/burguer.png"
 
+import { useTranslation } from "react-i18next";
+
 function Navbar(){
     const [showNav,setShowNav]=useState(false);
     const handleShowNavbar = () => {
         setShowNav(!showNav);
       }
 
+    const[t, i18n] = useTranslation("global");
 
     return(
             <nav className={`navbar ${showNav ? "responsive" : ""}`}>
@@ -26,23 +29,23 @@ function Navbar(){
                 <Fade duration={2500} delay={3500}>
                 <ul className="navright">
                     <li>
-                        <Link to="header" smooth={true} duration={500} className="navitem">Inicio</Link>
+                        <Link to="header" smooth={true} duration={500} className="navitem">{t("navigation.home")}</Link>
                         <div className="bar"></div>
                     </li>
                     <li>
-                        <Link to="aboutme" smooth={true} duration={500} className="navitem">Sobre Mi</Link>
+                        <Link to="aboutme" smooth={true} duration={500} className="navitem">{t("navigation.aboutme")}</Link>
                         <div className="bar"></div>
                     </li>
                     <li>
-                        <Link to="skills" smooth={true} duration={500} className="navitem">Conocimientos</Link>
+                        <Link to="skills" smooth={true} duration={500} className="navitem">{t("navigation.skills")}</Link>
                         <div className="bar"></div>
                     </li>
                     <li>
-                        <Link to="projects" smooth={true} duration={500} className="navitem">Proyectos</Link>
+                        <Link to="projects" smooth={true} duration={500} className="navitem">{t("navigation.portfolio")}</Link>
                         <div className="bar"></div>
                     </li>
                     <li>
-                        <Link to="contact" smooth={true} duration={500} className="navitem">Contáctame</Link>
+                        <Link to="contact" smooth={true} duration={500} className="navitem">{t("navigation.contact")}</Link>
                         <div className="bar"></div>
                     </li>
                 </ul>

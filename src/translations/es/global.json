@@ -1,0 +1,39 @@
+{
+    "navigation":{
+        "home" : "Incio",
+        "aboutme" : "Sobre Mi",
+        "skills" : "Conocimientos",
+        "portfolio" : "Proyectos",
+        "contact" : "Contáctame"
+    },
+
+    "main-title":{
+        "description-1": "Desarrollador ",
+        "description-2": " Jr."
+    },
+
+    "aboutme":{
+        "title": "Sobre Mi",
+        "description" : "Soy un programador junior con experiencia en el desarrollo de la parte visual e interfaz de sitios web. Desde 2017, he estado inmerso en el mundo de la programación y disfruto mucho trabajando en proyectos desafiantes donde puedo aplicar mis conocimientos. Siempre me mantengo actualizando mis habilidades y aprendiendo cosas nuevas."
+    },
+
+    "skills":{
+        "title": "Habilidades/Tecnologías",
+        "personal-title": "Personales",
+        "personal-1": "Fácil aprendizaje",
+        "personal-2": "Autodidacta",
+        "personal-3": "Buena predisposición",
+        "personal-4": "Adaptabilidad",
+        "personal-5": "Trabajo en equipo",
+        "it-title": "Informáticas"
+    },
+
+    "projects":{
+        "title": "Proyectos"
+    },
+
+    "contact":{
+        "linkedin" : "Perfil de Linkedin",
+        "cv" : "Descarga mi curriculum"
+    }
+}

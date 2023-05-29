@@ -20,7 +20,7 @@
     justify-content: space-around;
     cursor: pointer;
     border-left: 3px solid #f5f5f5;
-    
+    padding: 0;
 }
 .navbar .navright .bar{
     background: linear-gradient(to right, rgb(141,56,165), rgb(255,0,0));
@@ -78,6 +78,127 @@ header .description{
 header .description img{
     padding-left: 15px;
     width: 7%;
+}
+/*
+header .line{
+    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
+    position: absolute;
+    top: 60vh;
+    left: 6vw;
+    height: 52vh;
+    width: 2.5px;
+    border-radius: 5px;
+}
+header .line2{
+    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
+    position: absolute;
+    top: 0;
+    right: 6vw;
+    height: 50vh;
+    width: 2.5px;
+    border-radius: 5px;
+}
+*/
+
+/*Idiom button*/
+.idiom{
+    position: absolute;
+    margin: 75vh auto 0 auto;
+    left: 0;
+}
+.idiom ul {
+--color: rgb(141,56,165);
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.idiom ul img{
+    width: 45%;
+}
+.idiom ul li {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 85px;
+  height: 85px;
+}
+li .base {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 8px solid var(--color);
+  border-left: 8px solid transparent;
+  animation: spin 8s linear infinite;
+  filter: drop-shadow(0 0 10px var(--color));
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateX(60deg) rotateZ(0);
+  }
+  100% {
+    transform: rotateX(60deg) rotateZ(-360deg);
+  }
+}
+li .base,
+li .title,
+li .icon {
+  position: absolute;
+  color: #b5b5b5;
+  transform: rotateX(60deg) rotateZ(-45deg);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+li .title {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transform: rotateY(30deg) skewY(-24deg) translateY(0px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+li .icon {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  pointer-events: none;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    margin-bottom: 0;
+  }
+  50% {
+    margin-bottom: 15px;
+  }
+}
+
+.base:hover {
+  filter: drop-shadow(0 0 10px var(--color));
+  animation-play-state: paused;
+}
+
+.base:hover + .title + .icon {
+  transform: rotateY(30deg) skewY(-24deg) translateY(-80px);
+  color: var(--color);
+  filter: drop-shadow(0 0 3px var(--color));
+  animation: wave 1s ease-in-out infinite;
+}
+
+.base:hover + .title {
+  color:rgb(141,56,165);
+  transform: rotateY(30deg) skewY(-24deg) translateY(-40px);
+  text-shadow: 0 0 3px var(--color);
+  transition-delay: 0.1s;
+  opacity: 1;
+  animation: wave 1s ease-in-out infinite;
 }
 
 /*ABOUTME STYLES*/
@@ -249,7 +370,24 @@ header .description img{
 .tech .circle:hover #js{
     opacity: 1;
 }
-
+/*
+.skills .line{
+    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
+    position: absolute;
+    top: 210vh;
+    left: 10vw;
+    height: 50vh;
+    width: 2.5px;
+}
+.skills .line2{
+    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
+    position: absolute;
+    top: 250vh;
+    right: 10vw;
+    height: 60vh;
+    width: 2.5px;
+}
+*/
 /*PROJECTS STYLES*/
 .project{
     height: 100vh;
@@ -380,11 +518,13 @@ header .description img{
             opacity: 1;
             visibility: visible;
             position: absolute;
+            text-align: center;
             height: 100%;
             width: 100%;
             flex-direction: column;
             border: none;
             justify-content: space-evenly;
+            align-items: center;
             transition: all 400ms;
         }
         .responsive .navleft{
@@ -420,6 +560,9 @@ header .description img{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+        header .idiom{
+        margin-top: 85vh;
+    }
 }
 
 @media (max-width:768px) {
@@ -443,6 +586,9 @@ header .description img{
     .navbar .burguer{
         width: 4%;
     }
+    header .idiom{
+        margin-top: 85vh;
+    }
 }
 
 @media (max-width:740px) {
@@ -457,6 +603,9 @@ header .description img{
         text-align: center;
         padding-top: 50px;
         width: 90%;
+    }
+    header .idiom{
+        margin-top: 85vh;
     }
 }
 
@@ -487,11 +636,33 @@ header .description img{
         width: 40px;
         padding-left: 40px;
     }
+    header .idiom{
+        margin-top: 85vh;
+    }
 }
 
 @media (max-width: 530px){
     header .title{
         font-size: 4.8rem;
+    }
+    header .idiom{
+        margin-top: 85vh;
+    }
+    header .idiom ul img{
+        width: 30%;
+    }
+    .base:hover + .title + .icon{
+        transform: rotateY(30deg) skewY(-24deg) translateY(-60px);
+    }
+    .base:hover + .title{
+        transform: rotateY(30deg) skewY(-24deg) translateY(-30px);
+    }
+    li .base{
+        width: 80%;
+        height: 80%;
+    }
+    li .title{
+        font-size: 1rem;
     }
     .project .project-grid .project-item{
         width: 175px;
@@ -504,6 +675,7 @@ header .description img{
     .contact .contact-div div img{
         width: 5%;
     }
+
 }
 
 @media (max-width: 475px) {
@@ -532,9 +704,18 @@ header .description img{
     .skills h2{
         font-size: 1.75rem;
     }
+    li .title{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 400px) {
+    .navbar .burguer{
+        padding-right: 15px;
+    }
+    .navbar .navleft img{
+        width: 35px;
+    }
     header .title{
         font-size: 4rem;
     }
@@ -561,6 +742,12 @@ header .description img{
     .aboutme .texto{
         font-size: 0.9rem;
     }
+    li .title{
+        font-size: 1rem;
+    }
+    .idiom{
+        left: -15px;
+    }
 }
 @media (max-width: 375px) {
     header .title{
@@ -571,5 +758,15 @@ header .description img{
     }
     .skills h2{
         font-size: 1.35rem;
+    }
+    .idiom{
+        left: -15px;
+    }
+    li .base{
+        width: 70%;
+        height: 70%;
+    }
+    li .title{
+        font-size: 1rem;
     }
 }
