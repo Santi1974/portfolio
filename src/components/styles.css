@@ -513,6 +513,8 @@ li .icon {
         .responsive{
             height: 100vh;
             transition: all 400ms;
+            padding: 0;
+
         }
         .responsive .navright{
             opacity: 1;
@@ -526,11 +528,11 @@ li .icon {
             justify-content: space-evenly;
             align-items: center;
             transition: all 400ms;
+            padding: 0;
         }
         .responsive .navleft{
             visibility: hidden;
             opacity: 0;
-            
         }
     .aboutme{
         width: 80%;
