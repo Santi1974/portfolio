@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <link rel="preload" as="image" href="../src/assets/logowhite1.png" />
-    <meta charset="utf-8" />
-    <link rel="icon" href="../src/assets/computer.png" sizes="16x16" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -23,7 +21,11 @@
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
-    -->
+    -->   
+    <link rel="preload" href="../src/assets/logowhite1.png" as="image"  
+    imagesrcset="../src/assets/logowhite1_400px.png 400w, ../src/assets/logowhite1_800px.png 800w">
+    <meta charset="utf-8" />
+    <link rel="icon" href="../src/assets/computer.png" sizes="16x16" />
     <title>Santiago Beneitez</title>
   </head>
   <body>
