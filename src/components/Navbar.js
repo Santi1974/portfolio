@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import "./styles.css"
+
 import { Link } from 'react-scroll';
 import { Fade } from "react-reveal";
+import { useTranslation } from "react-i18next";
+
 import logo from "../assets/logowhite2.png"
 import burguer from "../assets/burguer.png"
 
-import { useTranslation } from "react-i18next";
+
 
 function Navbar(){
     const [showNav,setShowNav]=useState(false);
@@ -13,7 +16,7 @@ function Navbar(){
         setShowNav(!showNav);
       }
 
-    const[t, i18n] = useTranslation("global");
+    const[t] = useTranslation("global");
 
     return(
             <nav className={`navbar ${showNav ? "responsive" : ""}`}>
@@ -49,7 +52,7 @@ function Navbar(){
                         <div className="bar"></div>
                     </li>
                 </ul>
-                <img src={burguer} className="burguer" onClick={handleShowNavbar}></img>
+                <img src={burguer} className="burguer" onClick={handleShowNavbar} alt="menu"></img>
                 </Fade>
             </nav>
     );

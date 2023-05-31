@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 
 import global_es from "./translations/es/global.json"
 import global_en from "./translations/en/global.json"
-
 
 i18next.init({
         interpolation: {escapeValue: false},

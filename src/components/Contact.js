@@ -1,15 +1,16 @@
 import React, { useState } from "react";
+
+import { useTranslation } from "react-i18next";
+
 import linkedinlogo from "../assets/linkedinlogo.png"
 import phonelogo from "../assets/phonelogo.png"
 import maillogo from "../assets/maillogo.png"
 import cvlogo from "../assets/cvlogo.png"
 import pdfcv from "../assets/cv.pdf"
-import { useTranslation } from "react-i18next";
-
 
 function Contact(){
 
-    const[t, i18n] = useTranslation("global");
+    const[t] = useTranslation("global");
 
     const [copied,setCopied] = useState(false);
 
@@ -20,7 +21,6 @@ function Contact(){
                 setCopied(false);
                 }, 2000);
       };
-
 
     return(
         <footer className="contact">

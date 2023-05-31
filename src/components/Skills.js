@@ -1,23 +1,18 @@
 import React from "react";
 import { Fade } from "react-reveal";
+import { useTranslation } from "react-i18next";
 
 import htmllogo from "../assets/htmllogo.png"
 import csslogo from "../assets/csslogo.png"
 import jslogo from "../assets/jslogo.png"
 import reactlogo from "../assets/reactlogo.png"
 
-import { useTranslation } from "react-i18next";
-
-
 function Skills(){
-
-    const[t, i18n] = useTranslation("global");
+    const[t] = useTranslation("global");
 
     return(
         <section className="skills">
             <Fade left>
-                {/*<div className="line"></div>
-                <div className="line2"></div>*/}
                 <h2>{t("skills.title")}</h2>
                 <div className="cards">
                     <div className="personal">

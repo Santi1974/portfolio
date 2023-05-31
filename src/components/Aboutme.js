@@ -1,11 +1,12 @@
 import React from "react";
-import avatar from "../assets/avatar2.png";
+
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
 
+import avatar from "../assets/avatar2.png";
 
 function Aboutme(){
-    const[t, i18n] = useTranslation("global");
+    const[t] = useTranslation("global");
 
     return(
         <section className="aboutme">

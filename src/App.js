@@ -2,8 +2,10 @@ import React from "react";
 import "./App.css";
 import { Element } from 'react-scroll';
 import { Helmet } from 'react-helmet';
+
 import computer from "../src/assets/computer.png"
 
+/*Importing components*/
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Aboutme from "./components/Aboutme";

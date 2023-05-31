@@ -79,45 +79,24 @@ header .description img{
     padding-left: 15px;
     width: 7%;
 }
-/*
-header .line{
-    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
-    position: absolute;
-    top: 60vh;
-    left: 6vw;
-    height: 52vh;
-    width: 2.5px;
-    border-radius: 5px;
-}
-header .line2{
-    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
-    position: absolute;
-    top: 0;
-    right: 6vw;
-    height: 50vh;
-    width: 2.5px;
-    border-radius: 5px;
-}
-*/
 
-/*Idiom button*/
-.idiom{
+/*Header language button*/
+.idioma{
     position: absolute;
     margin: 75vh auto 0 auto;
     left: 0;
 }
-.idiom ul {
+.idioma ul {
 --color: rgb(141,56,165);
   display: flex;  
   justify-content: center;
   align-items: center;
   list-style-type: none;
 }
-
-.idiom ul img{
+.idioma ul img{
     width: 45%;
 }
-.idiom ul li {
+.idioma ul li {
   position: relative;
   display: grid;
   place-items: center;
@@ -152,7 +131,6 @@ li .icon {
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-
 li .title {
   text-transform: uppercase;
   font-size: 1.3rem;
@@ -162,7 +140,6 @@ li .title {
   opacity: 0;
   pointer-events: none;
 }
-
 li .icon {
   display: grid;
   place-items: center;
@@ -179,19 +156,16 @@ li .icon {
     margin-bottom: 15px;
   }
 }
-
 .base:hover {
   filter: drop-shadow(0 0 10px var(--color));
   animation-play-state: paused;
 }
-
 .base:hover + .title + .icon {
   transform: rotateY(30deg) skewY(-24deg) translateY(-80px);
   color: var(--color);
   filter: drop-shadow(0 0 3px var(--color));
   animation: wave 1s ease-in-out infinite;
 }
-
 .base:hover + .title {
   color:rgb(141,56,165);
   transform: rotateY(30deg) skewY(-24deg) translateY(-40px);
@@ -228,13 +202,12 @@ li .icon {
     background-attachment: fixed;
 }
 
-/*Avatar animation*/
+/*Aboutme Avatar animation*/
     .aboutme .avatar img{
-        --s: 60%; /* image size */
+    --s: 60%; /* image size */
     --b: 5px; /* border thickness */
     --c: rgba(141,56,165,.5); /* border color */
     --f: 1; /* initial scale */
-    
     width: var(--s);
     aspect-ratio: 1.05;
     padding-top: 4%;
@@ -334,7 +307,6 @@ li .icon {
 .tech .circle:hover{
     transform: scale(115%);
 }
-
 .circle::before {
     content: "";
     position: absolute;
@@ -370,24 +342,7 @@ li .icon {
 .tech .circle:hover #js{
     opacity: 1;
 }
-/*
-.skills .line{
-    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
-    position: absolute;
-    top: 210vh;
-    left: 10vw;
-    height: 50vh;
-    width: 2.5px;
-}
-.skills .line2{
-    background: linear-gradient(to top, rgb(141,56,165), rgb(255,0,0));
-    position: absolute;
-    top: 250vh;
-    right: 10vw;
-    height: 60vh;
-    width: 2.5px;
-}
-*/
+
 /*PROJECTS STYLES*/
 .project{
     height: 100vh;
@@ -494,7 +449,7 @@ li .icon {
     background: linear-gradient(to right, rgb(141,56,165), rgb(255,0,0));
 }
 
-/*Responsive*/
+/*Media queries*/
 @media (max-width:900px){
     .navbar .burguer{
         width: 2.5%;
@@ -504,7 +459,6 @@ li .icon {
         cursor: pointer;
         opacity: 1;
         visibility: visible;
-       
     }
     .navright{
         opacity: 0;
@@ -562,7 +516,7 @@ li .icon {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-        header .idiom{
+        header .idioma{
         margin-top: 85vh;
     }
 }
@@ -588,7 +542,7 @@ li .icon {
     .navbar .burguer{
         width: 4%;
     }
-    header .idiom{
+    header .idioma{
         margin-top: 85vh;
     }
 }
@@ -606,7 +560,7 @@ li .icon {
         padding-top: 50px;
         width: 90%;
     }
-    header .idiom{
+    header .idioma{
         margin-top: 85vh;
     }
 }
@@ -638,7 +592,7 @@ li .icon {
         width: 40px;
         padding-left: 40px;
     }
-    header .idiom{
+    header .idioma{
         margin-top: 85vh;
     }
 }
@@ -647,10 +601,10 @@ li .icon {
     header .title{
         font-size: 4.8rem;
     }
-    header .idiom{
+    header .idioma{
         margin-top: 85vh;
     }
-    header .idiom ul img{
+    header .idioma ul img{
         width: 30%;
     }
     .base:hover + .title + .icon{
@@ -747,7 +701,7 @@ li .icon {
     li .title{
         font-size: 1rem;
     }
-    .idiom{
+    .idioma{
         left: -15px;
     }
 }
@@ -761,7 +715,7 @@ li .icon {
     .skills h2{
         font-size: 1.35rem;
     }
-    .idiom{
+    .idioma{
         left: -15px;
     }
     li .base{
@@ -771,4 +725,14 @@ li .icon {
     li .title{
         font-size: 1rem;
     }
+}
+
+@media (max-width: 700px) and (min-width: 0px) {
+    .aboutme .bg{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(../assets/bg);
+    }
+    .project .bg2{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),  url(../assets/bg2.jpg);
+    }
+    
 }
