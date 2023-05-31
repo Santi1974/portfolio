@@ -635,6 +635,12 @@ li .icon {
 }
 
 @media (max-width: 475px) {
+    header .title{
+        font-size: 4rem;
+    }
+    header .description{
+        font-size: 0.8rem;
+    }
     .project .project-grid{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4,1fr);
@@ -664,7 +670,14 @@ li .icon {
         font-size: 1rem;
     }
 }
-
+@media (max-width: 450px){
+    header .title{
+        font-size: 3.9rem ;
+    }
+    header .description{
+        font-size: 0.7rem;
+    }
+}
 @media (max-width: 400px) {
     .navbar .burguer{
         padding-right: 15px;
@@ -673,10 +686,10 @@ li .icon {
         width: 35px;
     }
     header .title{
-        font-size: 4rem;
+        font-size: 3.8rem;
     }
     header .description{
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .skills h2{
         font-size: 1.6rem;
@@ -707,13 +720,13 @@ li .icon {
 }
 @media (max-width: 375px) {
     header .title{
-        font-size: 3.65rem;
+        font-size: 3.55rem;
     }
     header .description{
         font-size: 0.65rem;
     }
     .skills h2{
-        font-size: 1.35rem;
+        font-size: 1.30rem;
     }
     .idioma{
         left: -15px;
@@ -723,7 +736,7 @@ li .icon {
         height: 70%;
     }
     li .title{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
