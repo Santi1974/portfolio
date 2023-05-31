@@ -1,5 +1,5 @@
 import React, { useEffect} from 'react'
-import logo from "../assets/logowhite1.png"
+import logo from "../assets/logowhite1.webp"
 import "./preload.css"
 import { preLoaderAnim } from '../animations';
 
