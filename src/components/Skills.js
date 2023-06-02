@@ -12,7 +12,7 @@ function Skills(){
 
     return(
         <section className="skills">
-            <Fade left>
+            <Fade left delay={500}>
                 <h2>{t("skills.title")}</h2>
                 <div className="cards">
                     <div className="personal">
