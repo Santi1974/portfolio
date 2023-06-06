@@ -27,7 +27,7 @@ function Header(){
                     <ul>
                         <li>
                         <span className="base"></span>
-                        <span className="title">EN/ES</span>
+                        <span className="title2">EN/ES</span>
                         <span className="icon">
                             <img src={flag} alt="flag"></img>
                         </span>

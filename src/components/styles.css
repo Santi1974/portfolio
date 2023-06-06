@@ -123,7 +123,7 @@ li .base {
   }
 }
 li .base,
-li .title,
+li .title2,
 li .icon {
   position: absolute;
   color: #b5b5b5;
@@ -131,7 +131,7 @@ li .icon {
   cursor: pointer;
   transition: 0.5s ease-in-out;
 }
-li .title {
+li .title2 {
   text-transform: uppercase;
   font-size: 1.3rem;
   font-weight: bold;
@@ -160,13 +160,13 @@ li .icon {
   filter: drop-shadow(0 0 10px var(--color));
   animation-play-state: paused;
 }
-.base:hover + .title + .icon {
+.base:hover + .title2 + .icon {
   transform: rotateY(30deg) skewY(-24deg) translateY(-80px);
   color: var(--color);
   filter: drop-shadow(0 0 3px var(--color));
   animation: wave 1s ease-in-out infinite;
 }
-.base:hover + .title {
+.base:hover + .title2 {
   color:rgb(141,56,165);
   transform: rotateY(30deg) skewY(-24deg) translateY(-40px);
   text-shadow: 0 0 3px var(--color);
@@ -607,17 +607,17 @@ li .icon {
     header .idioma ul img{
         width: 30%;
     }
-    .base:hover + .title + .icon{
+    .base:hover + .title2 + .icon{
         transform: rotateY(30deg) skewY(-24deg) translateY(-60px);
     }
-    .base:hover + .title{
+    .base:hover + .title2{
         transform: rotateY(30deg) skewY(-24deg) translateY(-30px);
     }
     li .base{
         width: 80%;
         height: 80%;
     }
-    li .title{
+    li .title2{
         font-size: 1rem;
     }
     .project .project-grid .project-item{
@@ -666,16 +666,19 @@ li .icon {
     .skills h2{
         font-size: 1.75rem;
     }
-    li .title{
+    li .title2{
         font-size: 1rem;
     }
 }
 @media (max-width: 450px){
     header .title{
-        font-size: 3.9rem ;
+        font-size: 3.9rem;
     }
     header .description{
         font-size: 0.7rem;
+    }
+    li .title2{
+        font-size: 1rem;
     }
 }
 @media (max-width: 400px) {
@@ -711,7 +714,7 @@ li .icon {
     .aboutme .texto{
         font-size: 0.9rem;
     }
-    li .title{
+    li .title2{
         font-size: 1rem;
     }
     .idioma{
@@ -735,7 +738,7 @@ li .icon {
         width: 70%;
         height: 70%;
     }
-    li .title{
+    li .title2{
         font-size: 0.8rem;
     }
 }
