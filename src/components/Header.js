@@ -2,8 +2,8 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
 
-import waving from "../assets/waving-hand.png"
-import flag from "../assets/flags2.jpg";
+import waving from "../assets/waving-hand.webp"
+import flag from "../assets/flags2.webp";
 
 
 function Header(){

@@ -3,7 +3,7 @@ import "./App.css";
 import { Element } from 'react-scroll';
 import { Helmet } from 'react-helmet';
 
-import computer from "../src/assets/computer.png"
+import computer from "../src/assets/computer.webp"
 
 /*Importing components*/
 import Header from "./components/Header";

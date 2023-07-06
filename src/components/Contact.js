@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 import { useTranslation } from "react-i18next";
 
-import linkedinlogo from "../assets/linkedinlogo.png"
-import phonelogo from "../assets/phonelogo.png"
-import maillogo from "../assets/maillogo.png"
-import cvlogo from "../assets/cvlogo.png"
+import linkedinlogo from "../assets/linkedinlogo.webp"
+import phonelogo from "../assets/phonelogo.webp"
+import maillogo from "../assets/maillogo.webp"
+import cvlogo from "../assets/cvlogo.webp"
 import pdfcv from "../assets/cv.pdf"
 
 function Contact(){

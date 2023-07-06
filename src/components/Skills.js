@@ -2,10 +2,12 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
 
-import htmllogo from "../assets/htmllogo.png"
-import csslogo from "../assets/csslogo.png"
-import jslogo from "../assets/jslogo.png"
-import reactlogo from "../assets/reactlogo.png"
+import htmllogo from "../assets/htmllogo.webp"
+import csslogo from "../assets/csslogo.webp"
+import jslogo from "../assets/jslogo.webp"
+import reactlogo from "../assets/reactlogo.webp"
+import gitlogo from "../assets/gitlogo.webp"
+import bslogo from "../assets/bootstrap.webp"
 
 function Skills(){
     const[t] = useTranslation("global");
@@ -38,13 +40,20 @@ function Skills(){
                                 <p>CSS</p>
                             </div>
                             <div className="circle">
-                                <img src={jslogo} alt="js-logo"></img>
-                                <p id="js">JavaScript</p>
+                                <img src={bslogo} alt="bootstrap-logo"></img>
+                                <p className="js">Bootstrap</p>
                             </div>
-
+                            <div className="circle">
+                                <img src={jslogo} alt="js-logo"></img>
+                                <p className="js">JavaScript</p>
+                            </div>
                             <div className="circle">
                                 <img src={reactlogo} alt="react-logo"></img>
                                 <p>React</p>
+                            </div>
+                            <div className="circle">
+                                <img src={gitlogo} alt="git-logo"></img>
+                                <p>Git</p>
                             </div>
                         </div>
                     </div>

@@ -5,8 +5,8 @@ import { Link } from 'react-scroll';
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
 
-import logo from "../assets/logowhite2.png"
-import burguer from "../assets/burguer.png"
+import logo from "../assets/logowhite2.webp"
+import burguer from "../assets/burguer.webp"
 
 
 

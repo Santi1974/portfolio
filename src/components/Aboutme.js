@@ -3,7 +3,7 @@ import React from "react";
 import { Fade } from "react-reveal";
 import { useTranslation } from "react-i18next";
 
-import avatar from "../assets/avatar2.png";
+import avatar from "../assets/avatar2.webp";
 
 function Aboutme(){
     const[t] = useTranslation("global");
