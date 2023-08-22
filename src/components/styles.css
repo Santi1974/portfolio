@@ -432,7 +432,7 @@ li .icon {
     margin: 0;
     display: none;
 }
-.project-1 img, .project-2 img{
+.project-1 img, .project-2 img, .project-3 img{
     width: 10%;
     display: none;
 }
@@ -473,6 +473,47 @@ li .icon {
 .project-2 h6{
     font-size: 150%;
     text-align: center;
+    color: #f5f5f5;
+    margin: 0;
+    display: none;
+}
+.project-3-container{
+    background: url(../assets/screen3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    width: inherit;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.project-3{
+    display: flex;
+    height: inherit;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    transition: all 200ms;
+    &:hover{
+        background-color: #292929;
+    }
+    &:hover h6,
+    &:hover img,
+    &:hover p {
+      display: block;
+    }
+}
+.project-3 h6{
+    font-size: 180%;
+    color: #f5f5f5;
+    margin: 0;
+    display: none;
+}
+.project-3 p{
+    text-align: center;
+    font-size: 100%;
     color: #f5f5f5;
     margin: 0;
     display: none;

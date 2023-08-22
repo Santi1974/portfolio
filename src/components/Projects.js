@@ -8,6 +8,7 @@ import csslogo from "../assets/csslogo.webp"
 import jslogo from "../assets/jslogo.webp"
 import reactlogo from "../assets/reactlogo.webp"
 import bslogo from "../assets/bootstrap.webp"
+import angularlogo from "../assets/angular.png"
 
 function Projects(){
     const[t] = useTranslation("global");
@@ -18,6 +19,10 @@ function Projects(){
 
     const redirectToLink2 = () => {
         window.open('https://rickandmortyencyc.vercel.app', '_blank');
+    };
+
+    const redirectToLink3 = () => {
+        window.open('https://sbtodolist.vercel.app', '_blank');
     };
 
     return(
@@ -55,7 +60,21 @@ function Projects(){
                             </div>
                         </div>
                     </div>
-                    <div className="project-item">COMING SOON</div>
+                    <div className="project-item">
+                        <div className="project-3-container">
+                            <div className="project-3" onClick={redirectToLink3}>
+                                <h6>Task Manager</h6>
+                                <p>CRUD App</p>
+                                <div className="project-1-img">
+                                    <img src={htmllogo} alt="html-logo"></img>
+                                    <img src={csslogo} alt="css-logo"></img>
+                                    <img src={bslogo} alt="bootstrap-logo"></img>
+                                    <img src={jslogo} alt="javascript-logo"></img>
+                                    <img src={angularlogo} alt="angular-logo"></img>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div className="project-item">COMING SOON</div>
                     <div className="project-item">COMING SOON</div>
                     <div className="project-item">COMING SOON</div>
